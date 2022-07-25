@@ -46,7 +46,7 @@ do
     # setting the next wallpaper
     if [ $found == 1 ]; then
         echo $wall > $data_path
-        feh --bg-scale $wallpapers_path$wall
+        set_wallpaper "$wallpapers_path$wall"
         break
     fi
 
